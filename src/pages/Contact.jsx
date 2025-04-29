@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
-    <div className="bg-amber-50">
+    <div className="bg-amber-50 pt-16">
       {/* Hero Section - Visible immediately */}
       <section className="relative h-64 flex items-center justify-center bg-amber-800 text-amber-50">
         <div className="absolute inset-0 bg-black opacity-40"></div>

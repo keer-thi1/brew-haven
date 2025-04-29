@@ -151,7 +151,7 @@ const Cart = () => {
                   <div className="flex items-center space-x-4">
                     <button 
                       onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                      className="p-2 rounded-full bg-amber-50 text-amber-600 hover:bg-amber-100 transition"
+                      className="p-2 rounded-full bg-amber-50 pt-16  text-amber-600 hover:bg-amber-100 transition"
                       disabled={item.quantity <= 1}
                     >
                       -
@@ -159,7 +159,7 @@ const Cart = () => {
                     <span className="w-6 text-center font-medium">{item.quantity}</span>
                     <button 
                       onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                      className="p-2 rounded-full bg-amber-50 text-amber-600 hover:bg-amber-100 transition"
+                      className="p-2 rounded-full bg-amber-50 pt-16 text-amber-600 hover:bg-amber-100 transition"
                     >
                       +
                     </button>
@@ -175,7 +175,7 @@ const Cart = () => {
             </AnimatePresence>
           </div>
 
-          <div className="border-t border-amber-100 p-6 bg-amber-50/50">
+          <div className="border-t border-amber-100 p-6 bg-amber-50 pt-16/50">
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -211,7 +211,7 @@ const Cart = () => {
                     onClick={() => setPaymentMethod(method.id)}
                     className={`flex items-center justify-center space-x-2 p-3 border rounded-lg transition ${
                       paymentMethod === method.id 
-                        ? 'border-amber-400 bg-amber-50 shadow-inner' 
+                        ? 'border-amber-400 bg-amber-50 pt-16 shadow-inner' 
                         : 'border-gray-200 hover:border-amber-300 bg-white'
                     }`}
                   >

@@ -146,7 +146,7 @@ const Home = () => {
   const { addToCart } = useCart();
 
   return (
-    <div className="bg-amber-50">
+    <div className="bg-amber-50 pt-16">
       {/* Hero Section */}
       <section className="relative h-72 flex items-center justify-center bg-amber-800 text-amber-50 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-40"></div>

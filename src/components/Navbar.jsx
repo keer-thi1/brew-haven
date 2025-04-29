@@ -1,13 +1,12 @@
 import { Link } from 'react-router-dom';
-import { Coffee, Home, Info, Phone } from 'lucide-react';
-import { ShoppingCart } from 'lucide-react';
+import { Coffee, Home, UtensilsCrossed, Info, Phone, ShoppingCart } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 const Navbar = () => {
   const { cartItems } = useCart(); // Use the cart context to get cartItems
 
   return (
-    <nav className="bg-amber-900 text-amber-50 p-4 shadow-md">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-amber-900 text-amber-50 p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
           <Coffee className="h-8 w-8" />
@@ -18,6 +17,10 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-1 hover:text-amber-200 transition">
             <Home className="h-5 w-5" />
             <span>Home</span>
+          </Link>
+          <Link to="/home" className="flex items-center space-x-1 hover:text-amber-200 transition">
+            <UtensilsCrossed className="h-5 w-5" />
+            <span>Menu</span>
           </Link>
           <Link to="/about" className="flex items-center space-x-1 hover:text-amber-200 transition">
             <Info className="h-5 w-5" />
