@@ -211,7 +211,7 @@ const Cart = () => {
                     onClick={() => setPaymentMethod(method.id)}
                     className={`flex items-center justify-center space-x-2 p-3 border rounded-lg transition ${
                       paymentMethod === method.id 
-                        ? 'border-amber-400 bg-amber-50 pt-16 shadow-inner' 
+                        ? 'border-amber-400 bg-amber-50 shadow-inner' 
                         : 'border-gray-200 hover:border-amber-300 bg-white'
                     }`}
                   >
